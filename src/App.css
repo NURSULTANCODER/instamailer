@@ -1,38 +1,54 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+* {
+  margin: 0;
+  padding: 0;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header {
+  margin: 20px 0;
+  padding: 30px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.header h1 {
+  font-size: 25px;
+  color: #3f729b;
+  font-family: 'Lobster', cursive;
+}
+.app {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 1fr;
+}
+.from {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+.login {
+  display: grid;
+  grid-template-columns: 400px;
+  gap: 30px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  padding-top: 50px;
 }
-
-.App-link {
-  color: #61dafb;
+.message {
+  display: grid;
+  grid-template-columns: 400px;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.message h3 {
+  font-size: 19px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.57);
+  font-family: 'Lobster', cursive;
+}
+.message-textarea {
+  height: 200px;
+  line-height: 14px;
+  font-size: 14px;
+  border-radius: 5px;
+  padding: 5px;
+  font-family: "Roboto","Helvetica","Arial",sans-serif;
 }
